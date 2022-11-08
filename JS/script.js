@@ -54,12 +54,12 @@ function selectFunc(e) {
 }
 // Show menu function
 function showMenu() {
-    toggleBtn.classList.add('d-none')
-    xBtn.classList.remove('d-none')
     body.style.overflow = 'hidden'
     nav.classList.remove('d-none')
     setTimeout(() => {
         nav.style.opacity = '1'
+        toggleBtn.classList.add('d-none')
+        xBtn.classList.remove('d-none')
     }, 10)
 }
 // Close menu function
