@@ -61,7 +61,6 @@ function showMenu() {
     setTimeout(() => {
         nav.style.opacity = '1'
     }, 10)
-    nav.style.transform = 'translateY(0)'
 }
 // Close menu function
 function closeMenu() {
@@ -70,10 +69,8 @@ function closeMenu() {
     body.style.overflow = 'visible'
     nav.style.opacity = '0'
     setTimeout(() => {
-        nav.style.transform = 'translateY(900px)'
         nav.classList.add('d-none')
     }, 300)
-    nav.style.transform = 'translateY(900px)'
 }
 // SelectFunc call
 selectFunc()
