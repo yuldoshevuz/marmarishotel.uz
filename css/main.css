@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Montserrat', Arial;
+  color: #b99470;
+  box-sizing: border-box;
+}
+
+.container {
+    max-width: 1280px!important;
+}
+
+.main {
+    height: 400px!important;
+}
+
+ul, ol {
+    padding-left: 0!important;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #484848;
+    display: inline-block;
+    cursor: pointer;
+}
+a:hover {
+    color: inherit;
+}
+.button {
+    width: 250px;
+    font-size: 1.125rem;
+    color: #fff!important;
+    border: 0!important;
+    border-radius: 5px!important;
+    padding: 0.75rem 2rem!important;
+    font-weight: 500!important;
+    transition: all ease-in-out 0.2s!important;
+}
+.btn-brown {
+    background-color: #b99470;
+}
+.btn-warning {
+    background-color: #ffc721;
+}
+.btn-brown:hover,
+.btn-brown:focus,
+.btn-warning:hover {
+    background-color: #ffcf3f;
+}
+
+/* Scrollbar style */
+::-webkit-scrollbar {
+    width: 7px!important;
+    height: 7px!important;
+}
+::-webkit-scrollbar-thumb {
+    background: #b99470;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+::selection {
+    background: #b99470;
+    color: #fff;
+}
+.text-style {
+    color: #484848;
+    font-size: 1.125rem;
+}
+.section-text {
+    color: #484848;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+}
+.text-brown {
+    color: #b99470!important;
+}
+.title-style {
+    color: #b99470;
+    font-size: 2.5625rem;
+    font-weight: 600;
+    margin: 2.5rem 0;
+}
+.section-title > .section-title__border {
+    background-color: #000;
+    width: 60px;
+    height: 4px;
+    margin-top: 10px;
+}
+.section-title__text {
+    font-size: 2.125rem;
+    font-weight: 600;
+    color: #363636;
+}
+.dropdown-menu {
+    width: 40px!important;
+    padding: 0.75rem 0!important;
+    transition: all ease 0.5s;
+    border: 0!important;
+    border-radius: 0;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    -webkit-box-shadow: 0px 0px 48px -2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 48px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 48px -2px rgba(0, 0, 0, 0.2);
+}
+.dropdown-menu > li {
+    padding: 0.5rem 0;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+.dropdown-menu > li:hover {
+    color: #000;
+}
+img {
+    pointer-events: none;
+}

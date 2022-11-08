@@ -1,0 +1,265 @@
+/* Media */
+@media (min-width: 992px) {
+    .amenities-el > div {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .booking-title {
+        font-size: 1.3125rem;
+    }
+    .booking-wrapper input,
+    .booking-wrapper select,
+    .booking-wrapper .room-num {
+        font-size: 0.875rem;
+    }
+    .booking-wrapper button.search {
+        font-size: 1.203125rem;
+    }
+    .booking-content .form-subtitle {
+        font-size: 0.7875rem;
+    }
+    .booking-menu .search {
+        font-size: 1.203125rem;
+    }
+    .add-room * {
+        font-size: 1.125rem;
+    }
+    .add-room * {
+        font-size: 0.875rem;
+    }
+    .carousel-wrapper i.left {
+        left: -10px;
+        display: none;
+    }
+    .carousel-wrapper i.right{
+        right: -10px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .card-title {
+        font-size: 1rem;
+    }
+    .facilities-item__title {
+        font-size: 1.5625rem;
+    }
+    .booking-title {
+        font-size: 1.125rem;
+    }
+    .del-btn > * {
+        font-size: 0.84375rem;
+        padding: 3px 6px;
+    }
+    .booking-wrapper input,
+    .booking-wrapper select,
+    .booking-wrapper .room-num {
+        font-size: 0.75rem;
+    }
+    .booking-wrapper button.search {
+        font-size: 1.03125rem;
+    }
+    .booking-wrapper-container .button {
+        padding: 0.7rem 0!important;
+    }
+    .booking-content input,
+    .booking-content select {
+        font-size: 0.75rem;
+    }
+    .booking-content .form-subtitle {
+        font-size: 0.675rem;
+    }
+    .booking-menu .search {
+        font-size: 1.03125rem;
+    }
+    .add-room * {
+        font-size: 0.75rem;
+    }
+    .btn-plus {
+        width: 20px;
+        height: 20px;
+        position: relative;
+    }
+    .btn-plus i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .section-title__text {
+        font-size: 1.5625rem;
+    }
+    #header {
+        position: relative;
+    }
+    .header-info {
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .nav {
+        display: none;
+    }
+    .nav-mobile {
+        display: block;
+    }
+    .nav-mobile-item {
+        font-size: 1.5rem;
+    }
+    .header-info__text {
+        display: none;
+    }
+    .nav-mobile-item.dropdown {
+        position: absolute;
+        top: 0;
+        bottom: 2rem;
+        z-index: 10;
+        font-size: 1.25rem;
+    }
+    .toggle-menu {
+        display: block;
+    }
+    .main-home {
+        height: 100vh!important;
+    }
+    .main-home > .container {
+        margin-top: 4rem;
+    }
+    .main-title {
+        font-size: 2.1875rem;
+        width: 80%;
+        margin: 2rem auto;
+    }
+    .title-style {
+        font-size: 2.1875rem;
+    }
+    .abouts-us__link {
+        font-size: 1rem;
+    }
+    .booking-wrapper-container .bron-input input,
+    .booking-wrapper-container .bron-input div {
+        font-size: 0.875rem;
+    }
+    .booking-wrapper-container .button {
+        padding: 1rem 0!important;
+    }
+    .carousel img{
+        width: calc(100% / 2);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .main-title {
+        width: 100%;
+    }
+    .booking-title {
+        font-size: 1.125rem;
+    }
+    .booking-wrapper input,
+    .booking-wrapper select,
+    .booking-wrapper .room-num {
+        font-size: 0.875rem;
+    }
+    .booking-wrapper button.search {
+        font-size: 1.203125rem;
+    }
+    .booking-wrapper-container .button {
+        padding: 0.7rem 0!important;
+    }
+    .carousel-wrapper .carousel {
+        height: 180px;
+    }
+    .footer-item {
+        margin: 1.2rem 0;
+    }
+    .booking-content .form-subtitle {
+        font-size: 0.7875rem;
+    }
+}
+
+@media (max-width: 479.98px) {
+    .button {
+        font-size: 0.875rem;
+    }
+    .nav-mobile {
+        top: 0;
+    }
+    .nav-mobile-items {
+        position: relative;
+        top: 5rem;
+    }
+    .nav-mobile-items
+    .nav-mobile-item {
+        font-size: 1rem;
+    }
+    .main-home {
+        height: 100vh;
+        top: 0rem;
+    }
+    .main-home > .container {
+        margin-top: 5rem;
+    }
+    .main-title {
+        margin: 0;
+        margin-bottom: 1rem;
+        font-size: 1.75rem;
+    }
+    .header-info {
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        border-radius: 10px;
+        box-shadow: 0 5px 29px rgb(97 97 97 / 25%);
+    }
+    .title-style {
+        font-size: 1.75rem;
+    }
+    .booking-title {
+        font-size: 1.09375rem;
+    }
+    .section-text {
+        font-size: 0.875rem;
+    }
+    .text-style {
+        font-size: 0.875rem;
+    }
+    .section-title__text {
+        font-size: 1.375rem;
+    }
+    .abouts-us__link {
+        font-size: 1.125rem;
+    }
+    .amenities-title {
+        font-size: 0.875rem;
+    }
+    .card-title {
+        font-size: 1.125rem;
+    }
+    .facilities-item__title {
+        font-size: 1.375rem;
+    }
+    .carousel-wrapper .carousel {
+        height: 265px;
+    }
+    .carousel img{
+        width: calc(100% / 1);
+    }
+    .review-name {
+        font-size: 0.875rem;
+    }
+    .footer-item {
+        margin: 0.8rem 0;
+    }
+    .booking-menu .search {
+        font-size: 1.203125rem;
+    }
+    .add-room * {
+        font-size: 0.875rem;
+    }
+}
