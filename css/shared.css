@@ -16,7 +16,7 @@
     bottom: 0;
     transform: translateY(900px);
     opacity: 0;
-    transition: all ease 0.4s;
+    transition: all ease 0.5s;
 }
 .nav-mobile-items
 .nav-mobile-item {

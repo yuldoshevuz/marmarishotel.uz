@@ -73,6 +73,7 @@ function closeMenu() {
         nav.style.transform = 'translateY(900px)'
         nav.classList.add('d-none')
     }, 300)
+    nav.style.transform = 'translateY(900px)'
 }
 // SelectFunc call
 selectFunc()
