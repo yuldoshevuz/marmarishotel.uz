@@ -176,23 +176,50 @@
                             <div class="col-sm-12 col-md-10">
                                 <div class="booking-content">
                                     <div class="room-container row justify-content-between pb-2">
+                                        <div class="col-12">
+                                            <p class="section-text mb-1">Ismingiz</p>
+                                            <div class="input-container">
+                                                <input type="text" class="form-control text-capitalize" id="name">
+                                                <i class="input-icon select-icon fa-sharp fa-solid fa-user"></i>
+                                            </div>
+                                            <!-- <div class="invalid-feedback invalid-arrival"></div>
+                                            <div class="valid-feedback"></div> -->
+                                        </div>
                                         <div class="col-sm-6">
-                                            <p class="section-text mb-2">Kelish sanasi</p>
+                                            <p class="section-text mb-1">Telefon raqam</p>
+                                            <div class="input-container">
+                                                <input type="number" class="form-control" id="phone-number">
+                                                <i class="input-icon select-icon fa-solid fa-phone"></i>
+                                            </div>
+                                            <!-- <div class="invalid-feedback invalid-arrival"></div>
+                                            <div class="valid-feedback"></div> -->
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p class="section-text mb-1">E-pochta manzilingiz</p>
+                                            <div class="input-container">
+                                                <input type="email" class="form-control" id="email">
+                                                <i class="input-icon select-icon fa-solid fa-envelope"></i>
+                                            </div>
+                                            <!-- <div class="invalid-feedback invalid-arrival"></div>
+                                            <div class="valid-feedback"></div> -->
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p class="section-text mb-1">Kelish sanasi</p>
                                             <div class="input-container">
                                                 <input type="date" class="form-control" id="arrival-date">
                                                 <i class="input-icon calendar-icon fa-sharp fa-solid fa-calendar-days"></i>
                                             </div>
-                                            <div class="invalid-feedback invalid-arrival"></div>
-                                            <div class="valid-feedback"></div>
+                                            <!-- <div class="invalid-feedback invalid-arrival"></div>
+                                            <div class="valid-feedback"></div> -->
                                         </div>
                                         <div class="col-sm-6">
-                                            <p class="section-text mt-3 mt-sm-0 mb-2">Jo'nash sanasi</p>
+                                            <p class="section-text mt-3 mt-sm-0 mb-1">Jo'nash sanasi</p>
                                             <div class="input-container">
                                                 <input type="date" class="form-control" id="departure-date">
                                                 <i class="input-icon calendar-icon fa-sharp fa-solid fa-calendar-days"></i>
                                             </div>
-                                            <div class="invalid-feedback invalid-departure"></div>
-                                            <div class="valid-feedback"></div>
+                                            <!-- <div class="invalid-feedback invalid-departure"></div>
+                                            <div class="valid-feedback"></div> -->
                                         </div>
                                         <div class="col-12 mt-4">
                                             <p class="section-text mb-2">Xona sig'imi</p>
@@ -237,7 +264,7 @@
                             </div>
                         </div>
                         <div class="row booking-menu justify-content-center">
-                            <div class="col-sm-10 mt-4">
+                            <!-- <div class="col-sm-10 mt-4">
                                 <div class="add-room d-flex justify-content-center justify-content-md-start align-items-center">
                                     <p class="add-room-text m-0 me-2">
                                         Qo'shimcha <b>yana 1</b> xona kerak
@@ -246,7 +273,7 @@
                                          <i class="fa-sharp fa-solid fa-plus"></i>
                                     </div>
                                 </div> 
-                            </div>
+                            </div> -->
                             <div class="col-md-10 mt-4">
                                 <button type="menu" class="button search btn-brown w-100">QIDIRISH</button>
                             </div>
@@ -285,9 +312,9 @@
                                     <img class="flag" src="../img/flags/uz.svg" alt="RU">
                                 </a>
                                 <ul class="dropdown-menu text-center">
-                                    <li class="fw-semibold"><img class="flag" src="./img/flags/ru.svg" alt="RU">RU</li>
-                                    <li class="fw-semibold"><img class="flag" src="./img/flags/uz.svg" alt="UZ">UZ</li>
-                                    <li class="fw-semibold"><img class="flag" src="./img/flags/us.svg" alt="EN">EN</li>
+                                    <li class="fw-semibold"><img class="flag" src="../img/flags/ru.svg" alt="RU">RU</li>
+                                    <li class="fw-semibold"><img class="flag" src="../img/flags/uz.svg" alt="UZ">UZ</li>
+                                    <li class="fw-semibold"><img class="flag" src="../img/flags/us.svg" alt="EN">EN</li>
                                 </ul>
                             </li>
                         </ul>
@@ -295,9 +322,9 @@
                     <div class="col-5 col-md-3">
                         <ul class="footer-items">
                             <h3 class="footer-title">Ijtimoiy tarmoq</h3>
-                            <li class="footer-item"><a href="https://t.me/marmarishotel"><img src="../img/social/telegram.svg" alt="">Telegram</a></li>
-                            <li class="footer-item"><a href="https://instagram.com/marmarishotel"><img src="../img/social/instagram.svg" alt="">Instagram</a></li>
-                            <li class="footer-item"><a href="https://www.facebook.com/profile.php?id=100073466139225"><img src="../img/social/facebook.svg" alt="">Facebook</a></li>
+                            <li class="footer-item"><a href="https://t.me/marmarishotel">Telegram</a></li>
+                            <li class="footer-item"><a href="https://instagram.com/marmarishotel">Instagram</a></li>
+                            <li class="footer-item"><a href="https://www.facebook.com/profile.php?id=100073466139225">Facebook</a></li>
                         </ul>
                     </div>
                     <div class="col-12 col-md-3 mt-4 mt-md-0">
@@ -319,25 +346,23 @@
         <!-- JS files link -->
         <script src="../JS/script.js"></script>
         <script>
-            // Bootstrap Validation
             (() => {
             'use strict'
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                const forms = document.querySelectorAll('.booking-form')
 
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            const forms = document.querySelectorAll('.needs-validation')
+                // Loop over them and prevent submission
+                Array.from(forms).forEach(form => {
+                    form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
 
-            // Loop over them and prevent submission
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                if (!form.checkValidity()) {
-                    event.preventDefault()
-                    event.stopPropagation()
-                }
-
-                form.classList.add('was-validated')
-                }, false)
-            })
-})()
+                    form.classList.remove('was-validated')
+                    }, false)
+                })
+            })()
         </script>
         <!-- Bootstrap JS link -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>

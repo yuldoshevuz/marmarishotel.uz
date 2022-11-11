@@ -413,9 +413,15 @@ select {
 .dropdown-menu > li:hover {
     background-color: #ddd;
 }
+.room-container input[type="text"],
+.room-container input[type="number"],
+.room-container input[type="email"] {
+    transition: all ease 0.2s;
+    box-shadow: none!important;
+}
 .select-btn,
 .form-select,
-.booking-wrapper input {
+.booking-wrapper input[type="date"] {
     transition: all ease 0.2s;
     box-shadow: none!important;
     cursor: pointer;
@@ -438,8 +444,12 @@ select {
     border-radius: 2px!important;
 }
 .booking-wrapper select.add-people,
-.booking-wrapper select.add-children {
+.booking-wrapper select.add-children,
+.booking-wrapper #name,
+.booking-wrapper #phone-number,
+.booking-wrapper #email {
     padding-left: 2.7rem;
+    margin-bottom: 0.5rem;
 }
 .input-container {
     position: relative;
