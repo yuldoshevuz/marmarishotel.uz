@@ -132,7 +132,7 @@
                 <button class="mt-1 button btn-brown fw-semibold" data-bs-toggle="modal" data-bs-target="#contactFormModal">Xabar yubormoq</button>
                 <!-- Contact form modal -->
                   <div class="modal fade" id="contactFormModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="contactFormModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
                       <div class="modal-content">
                         <div class="modal-header">
                           <h1 class="modal-title fs-5 text-uppercase" id="contactFormModalLabel">Xabaringizni qoldiring</h1>
@@ -142,8 +142,8 @@
                           <div class="container-fluid">
                             <form class="form needs-validation" novalidate>
                                 <div class="row">
-                                    <div class="col-12 mt-3">
-                                        <div class="form-floating">
+                                    <div class="col-md-6 mt-3">
+                                        <!-- <div class="form-floating">
                                             <input type="text" class="form-control" id="firstName" placeholder="Ismingiz:" required>
                                             <label for="firstName">Ismingiz:</label>
                                             <div class="invalid-feedback">
@@ -152,10 +152,18 @@
                                             <div class="valid-feedback">
                                                 Tayyor.
                                             </div>
+                                        </div> -->
+                                        <label for="name">Ismingiz</label>
+                                        <input type="text" class="form-control text-capitalize  mt-1" id="name" required>
+                                        <div class="invalid-feedback">
+                                            Iltimos ismingizni kiriting.
+                                        </div>
+                                        <div class="valid-feedback">
+                                            Tayyor.
                                         </div>
                                     </div>
-                                    <div class="col-12 mt-3">
-                                        <div class="form-floating">
+                                    <div class="col-md-6 mt-3">
+                                        <!-- <div class="form-floating">
                                             <input type="number" class="form-control" id="phoneNumber" placeholder="Telefon raqamingiz:" required>
                                             <label for="phoneNumber">Telefon raqamingiz:</label>
                                             <div class="invalid-feedback">
@@ -164,10 +172,18 @@
                                             <div class="valid-feedback">
                                                 Tayyor.
                                             </div>
+                                        </div> -->
+                                        <label for="phoneNumber">Telefon raqamingiz</label>
+                                        <input type="number" class="form-control mt-1" id="phoneNumber" required>
+                                        <div class="invalid-feedback">
+                                            Iltimos telefon raqamingizni kiriting.
+                                        </div>
+                                        <div class="valid-feedback">
+                                            Tayyor.
                                         </div>
                                     </div>
                                     <div class="col-12 mt-3">
-                                        <div class="form-floating">
+                                        <!-- <div class="form-floating">
                                             <input type="email" class="form-control" id="phoneNumber" placeholder="Elektron pochta:" required>
                                             <label for="phoneNumber">E-pochta manzili:</label>
                                             <div class="invalid-feedback">
@@ -176,10 +192,18 @@
                                             <div class="valid-feedback">
                                                 Tayyor.
                                             </div>
+                                        </div> -->
+                                        <label for="email">E-pochta manzili</label>
+                                        <input type="email" class="form-control mt-1" id="email" required> 
+                                        <div class="invalid-feedback">
+                                            Elektron pochtangizni kiriting.
+                                        </div>
+                                        <div class="valid-feedback">
+                                            Tayyor.
                                         </div>
                                     </div>
                                     <div class="col-12 mt-3">
-                                        <div class="form-floating">
+                                        <!-- <div class="form-floating">
                                             <textarea class="form-control" placeholder="Xabar yozing:" id="floatingTextarea2" style="height: 100px" required></textarea>
                                             <label for="floatingTextarea2">Xabar yozing:</label>
                                             <div class="invalid-feedback">
@@ -188,6 +212,14 @@
                                             <div class="valid-feedback">
                                                 Tayyor.
                                             </div>
+                                        </div> -->
+                                        <label for="message">Xabar yozing</label>
+                                        <textarea class="form-control mt-1" id="message" style="height: 100px" required></textarea>
+                                        <div class="invalid-feedback">
+                                            Xabar qoldiring.
+                                        </div>
+                                        <div class="valid-feedback">
+                                            Tayyor.
                                         </div>
                                     </div>
                                     <div class="col-12 text-end my-4">
