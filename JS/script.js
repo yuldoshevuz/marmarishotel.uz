@@ -36,6 +36,9 @@ const selectDown = selectAll('.down')
 const bookingContent = select('.booking-content')
 const addRoomBtn = select('.add-room')
 const roomContainer = selectAll('.room-container')
+const bookingForm = select('.booking-form')
+const arrivalDate = select('#arrival-date')
+const departureDate = select('#departure-date')
 
 // 'Select' of the form events function
 function selectFunc(e) {
@@ -312,3 +315,16 @@ caruselFunc(select('.carousel-three-facilities'), selectAll('.carousel-three-ico
 caruselFunc(select('.carousel-four-facilities'), selectAll('.carousel-four-icon-facilities'))
 caruselFunc(select('.carousel-five-facilities'), selectAll('.carousel-five-icon-facilities'))
 caruselFunc(select('.carousel-six-facilities'), selectAll('.carousel-six-icon-facilities'))
+
+const date = new Date()
+const currentDate = date.getFullYear()+'-'+date.getMonth()+'-'+date.getDay()
+
+if (bookingForm) {
+    bookingForm.addEventListener('submit', (e) => {
+        e.preventDefault()
+        console.log(arrivalDate.value);
+        console.log(departureDate.value);
+    })
+} else {
+    console.log('Booking form not found');
+}
