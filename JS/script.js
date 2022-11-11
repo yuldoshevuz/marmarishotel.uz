@@ -37,8 +37,6 @@ const bookingContent = select('.booking-content')
 const addRoomBtn = select('.add-room')
 const roomContainer = selectAll('.room-container')
 const bookingForm = select('.booking-form')
-const arrivalDate = select('#arrival-date')
-const departureDate = select('#departure-date')
 
 // 'Select' of the form events function
 function selectFunc(e) {
@@ -318,13 +316,20 @@ caruselFunc(select('.carousel-six-facilities'), selectAll('.carousel-six-icon-fa
 
 const date = new Date()
 const currentDate = date.getFullYear()+'-'+date.getMonth()+'-'+date.getDay()
+const arrivalDate = select('#arrival-date')
+const departureDate = select('#departure-date')
 
-if (bookingForm) {
-    bookingForm.addEventListener('submit', (e) => {
-        e.preventDefault()
-        console.log(arrivalDate.value);
-        console.log(departureDate.value);
-    })
-} else {
-    console.log('Booking form not found');
-}
+// const timeDiff = Math.abs(date2.getTime() - date1.getTime());
+// const diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
+
+// console.log(diffDays);
+
+// if (bookingForm) {
+//     bookingForm.addEventListener('submit', (e) => {
+//         e.preventDefault()
+//         console.log(arrivalDate.value);
+//         // const timeDiff = Math.abs(+arrivalDate.value - +currentDate);
+//         // const diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+//         // console.log(+diffDays);
+//     })
+// }
